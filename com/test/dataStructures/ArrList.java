@@ -39,13 +39,25 @@ public class ArrList<T> {
         return element;
     }
 
+    public T get(int index){
+        if(index < 0 || index > size-1){
+            throw new IndexOutOfBoundsException("must get at location from 0 to " + size);
+        }
+        T element = (T) arr[index];
+        return element;
+    }
+
+    public boolean isEmpty(){
+        return size == 0;
+    }
+
     public void print() {
         for(int i=0;i<size;i++){
             System.out.print(arr[i]+" ");
         }
         System.out.println();
         System.out.println("capacity: " + capacity);
-        System.out.print("size: " + size);
+        System.out.println("size: " + size);
     }
 
     
