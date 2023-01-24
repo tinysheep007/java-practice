@@ -1,6 +1,5 @@
 package dataStructures;
 
-
 public class Dstest {
     public static void main(String[] args){
         // Self Made ArrList test
@@ -47,6 +46,14 @@ public class Dstest {
         }
         System.out.println();
         
+        // MyHashTable
+        MyHashTable<Integer> ht = new MyHashTable<>();
+        System.out.println(ht.contains(5));
+        ht.insert(5);
+        System.out.println("hashtable contains 5? "+ht.contains(5));
+        ht.insert(20);
+        ht.insert(25);
+        System.out.print(ht);
 
     }
 }
