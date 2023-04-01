@@ -2,6 +2,7 @@ package collectionsSample;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -24,6 +25,11 @@ public class ListTest {
         List<String> sl = new LinkedList<>();
         //same functionality but different implemenation like run time
         //it is a doubly linkedlist
+        Iterator<String> it = li.iterator();
+        while(it.hasNext()){
+            String s = it.next();
+            System.out.println(s);
+        }
     }
     
 }
