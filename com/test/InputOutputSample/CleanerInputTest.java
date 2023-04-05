@@ -10,6 +10,8 @@ public class CleanerInputTest {
         //in this syntactic sugar, we don't need to call FINALLY to close the stream
         //it would automatically close for us 
         //if we put our stream inside the parathenes after TRY
+
+        // there is a autocloseable interface for this syntactic sugar
         try (FileInputStream stream = new FileInputStream("./com/test/data/text.txt")){
             //when trying other blocks to print out, make sure to
             //comment out other blocks becasue they are reading the files too
