@@ -118,12 +118,13 @@ public class libMain {
         System.out.println("Type in book index to edit");
         scan.nextLine();
         int index = scan.nextInt();
+        scan.nextLine();
         while(index > LIST.size() - 1 || index < 0){
             System.out.println("book index don't exist");
             index = scan.nextInt();
             scan.nextLine();
         }
-        scan.nextLine();
+        
         //after getting a valid index
         Book b = LIST.get(index); 
         System.out.println("original title: "+ b.getTitle());
